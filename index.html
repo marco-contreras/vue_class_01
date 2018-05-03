@@ -11,12 +11,27 @@
 <div class="vue">
     <span>{{ message }}</span><br>
     <span>{{ showMessage() }}</span><br>
-    <span>{{ showFirstMessage() }}</span>
-    <img v-bind:src="src" >
+    <span>{{ showFirstMessage() }}</span><br><br>
+    <img width="100px" v-bind:src="src" ><br><br>
 
-    <button v-on:click="message='New message btn1'">Cambiar primer Mensaje</button>
-    <button v-on:click="message='New message btn2'">Cambiar primer Mensaje</button>
-    <button v-on:click="destroy">Destruir Vue</button>
+    <button v-on:click="message='New message btn1'">Cambiar primer Mensaje</button><br>
+    <button v-on:click="message='New message btn2'">Cambiar primer Mensaje</button><br>
+    <button v-on:click="destroy">Destruir Vue</button><br><br><br>
+
+
+    <ul>
+        <li>Valor 1: {{ val_1 }}</li>
+        <li>Valor 2: {{ val_2 }}</li>
+        <li>Valor 3: {{ val_3 }}</li>
+        <li>Valor 4: {{ val_4 }}</li>
+        <li>Suma : {{ sum }}</li>
+    </ul>
+
+    <br>
+    <button v-on:click="val_1++">Incrementar el primer valor</button><br>
+    <button v-on:click="val_2++">Incrementar el segundo valor</button><br>
+    <button v-on:click="val_3++">Incrementar el tercer valor</button><br>
+    <button v-on:click="val_4++">Incrementar el cuarto valor</button>
 </div>
 
 <script src="vue.js"></script>
