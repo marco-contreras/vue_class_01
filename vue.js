@@ -6,7 +6,8 @@ var app = new Vue({
         val_1: 0,
         val_2: 0,
         val_3: 0,
-        val_4: 0
+        val_4: 0,
+        name: 'Marco'
     },
     computed: {
         sum: function () {
