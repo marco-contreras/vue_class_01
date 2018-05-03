@@ -13,6 +13,10 @@
     <span>{{ showMessage() }}</span><br>
     <span>{{ showFirstMessage() }}</span>
     <img v-bind:src="src" >
+
+    <button v-on:click="message='New message btn1'">Cambiar primer Mensaje</button>
+    <button v-on:click="message='New message btn2'">Cambiar primer Mensaje</button>
+    <button v-on:click="destroy">Destruir Vue</button>
 </div>
 
 <script src="vue.js"></script>
